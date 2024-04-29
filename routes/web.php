@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::post('webcam-capture',[WebcamController::class,'store'])->name('webcam.capture');
+Route::get('/images', 'ImageController@index');
+
