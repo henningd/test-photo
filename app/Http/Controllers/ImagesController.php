@@ -8,7 +8,6 @@ class ImageController extends Controller
 {
     public function index()
     {
-        //$images = File::allFiles(public_path('uploads'));
         $images = Storage::disk('public')->allFiles('uploads');
         dd($images);
         return view('images.index', compact('images'));
