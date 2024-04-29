@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\WebcamController;
-use App\Http\Controllers\ImageController;
+use App\Http\Controllers\ImagesController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
