@@ -12,7 +12,7 @@
 <body>
 
 <div class="container">
-    <h1 class="text-center">WebCam Beispiel für Chargedata</h1>
+    <h1 class="text-center">WebCam Beispiel</h1>
 
     <form method="POST" action="{{ route('webcam.capture') }}">
         @csrf
