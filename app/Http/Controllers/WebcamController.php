@@ -13,7 +13,7 @@ class WebcamController extends Controller
             'image' => 'required',
         ],
         [
-            'image.required' => 'Please capture an image',
+            'image.required' => 'Bitte nehmen Sie ein Bild auf',
         ]);
         $img = $request->image;
         $folderPath = "uploads/";
@@ -24,6 +24,6 @@ class WebcamController extends Controller
         $file = $folderPath . $fileName;
         Storage::put($file, $image_base64);
 
-        dd('Image uploaded successfully: '.$fileName);
+        dd('Bild erfolgreich hochgeladen: '.$fileName);
     }
 }
