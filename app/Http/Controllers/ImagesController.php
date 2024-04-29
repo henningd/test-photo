@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
-class ImageController extends Controller
+class ImagesController extends Controller
 {
     public function index()
     {
