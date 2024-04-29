@@ -12,7 +12,7 @@
 <body>
 
 <div class="container">
-    <h1 class="text-center">Laravel webcam capture image and save from camera - ItSolutionStuff.com</h1>
+    <h1 class="text-center">WebCam Beispiel für Chargedata</h1>
 
     <form method="POST" action="{{ route('webcam.capture') }}">
         @csrf
@@ -24,12 +24,12 @@
                 <input type="hidden" name="image" class="image-tag">
             </div>
             <div class="col-md-6">
-                <div id="results">Your captured image will appear here...</div>
+                <div id="results">Dein Bild wird hier angezeigt...</div>
             </div>
             <div class="col-md-12 text-center">
                 <span class="text-danger">{{ $errors->first('image') }}</span>
                 <br/>
-                <button class="btn btn-success">Submit</button>
+                <button class="btn btn-success">Senden</button>
             </div>
         </div>
     </form>
