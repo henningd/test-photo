@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Gallery</title>
+    <title>Gespeicherte Bilder</title>
 </head>
 <body>
-    <h1>Bildergalerie</h1>
+    <h1>Bilder</h1>
     <div>
         @foreach ($images as $image)
-            <div>
-                <img src="{{ asset('uploads/' . $image->getFilename()) }}" style="width: 200px; height: auto;">
+            <div style="padding-bottom: 20px;">
+                <img src="{{ asset($image) }}" style="width: 200px; height: auto;">
             </div>
         @endforeach
     </div>

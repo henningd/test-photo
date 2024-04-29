@@ -8,8 +8,10 @@ class ImagesController extends Controller
 {
     public function index()
     {
-        $images = Storage::disk('public')->allFiles('uploads');
-        dd($images);
+        $images = Storage::disk('local')->allFiles('uploads');
+        //dd($a);
+        //$images = Storage::disk('public')->allFiles('uploads');
+        //dd($images);
         return view('images.index', compact('images'));
     }
 }
